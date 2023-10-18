@@ -1,0 +1,10 @@
+---
+import Layout from "@layouts/Page.astro";
+import { Memberships } from "@components/membership-tabs";
+---
+
+<Layout>
+  <div class="flex justify-center py-10 bg-white">
+    <Memberships client:visible />
+  </div>
+</Layout>

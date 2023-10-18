@@ -1,0 +1,92 @@
+---
+import Layout from "@layouts/Page.astro";
+import { Image } from "astro:assets";
+import pic from "@assets/Component-1-img.png";
+import { Button } from "@components/ui/button";
+import {
+  Table,
+  TableBody,
+  TableHead,
+  TableCell,
+  TableRow,
+} from "@components/ui/table";
+---
+
+<Layout>
+  <div class="p-8">
+    <Image
+      class="w-full object-fit object-center"
+      src={pic}
+      alt="Strike Force and Fitness"
+    />
+  </div>
+  <section class="py-10">
+    <div class="container flex flex-col max-w-[64rem] gap-4 items-center pt-6">
+      <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl">
+        Weekly Classes Added
+      </h1>
+      <a href="/schedule">
+        <Button variant="outline">View Class Schedule</Button></a
+      >
+    </div>
+  </section>
+  <section class="py-10 px-4 mx-auto w-full max-w-screen-xl">
+    <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl">House Fees</h1>
+    <Table>
+      <TableBody>
+        <TableRow>
+          <TableCell>Day Pass</TableCell>
+          <TableCell>$25</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Monthy Membership - Muay Thai</TableCell>
+          <TableCell>$200</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Monthy Membership - Jiu Jitsu</TableCell>
+          <TableCell>$175</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Monthy Membership - Unlimited Classes</TableCell>
+          <TableCell>$300</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
+  </section>
+  <section class="py-12 px-4 mx-auto w-full max-w-screen-xl">
+    <h1 class="font-bold text-2xl sm:text-3xl md:text-4xl">Visit Us</h1>
+    <div class="flex flex-col sm:flex-row gap-8 pt-6">
+      <iframe
+        class="h-[300px] flex-1"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12091.79102219482!2d-73.8959848!3d40.7411751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f5b733898db%3A0x94181bba6c040dca!2sStrikezone%20%26%20Fitness!5e0!3m2!1sen!2sus!4v1696975466683!5m2!1sen!2sus"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="text-white flex-1 flex flex-row sm:flex-col gap-6">
+        <div>
+          <h1 class="font-bold text-xl sm:text-xl md:text-2xl">Location</h1>
+          <p class="sm:text-lg">
+            {" "}
+            <span class="font-bold">Strike Force & Fitness</span>
+            <br />
+             43-20 69th st <br />
+             New York, NY, 11377
+          </p>
+        </div>
+        <div>
+          <h1 class="font-bold text-xl sm:text-lg md:text-2xl">Hours</h1>
+
+          <p class="sm:text-lg">
+            {" "}
+            <span class="font-bold">Mon-Fri</span>
+            <br />
+             7am-8pm <br />
+            <span class="font-bold">Saturday</span><br />
+             12-2pm <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from "./Base.astro";
+import type { Props as BaseHeadProps } from "../components/head/BaseHead.astro";
+import settings from "../config/settings";
+import { TopHeader, Nav } from "@components/topHeader";
+import { Footer } from "@components/ui/footer";
+import { Separator } from "@components/ui/separator";
+export interface Props {
+  seo?: BaseHeadProps;
+}
+
+const { seo } = Astro.props as Props;
+---
+
+<Layout seo={seo}>
+  <!-- Header -->
+  <TopHeader />
+  <Nav />
+  <div class="text-sm md:text-base lg:text-lg xl:text-xl text-white " id="page">
+    <slot />
+  </div>
+
+  <Footer client:visible />
+</Layout>

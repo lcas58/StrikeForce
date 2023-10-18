@@ -1,0 +1,37 @@
+---
+import "../../app/globals.css";
+import BaseHead from "@components/head/BaseHead.astro";
+import type { Props as BaseHeadProps } from "@components/head/BaseHead.astro";
+
+export interface Props {
+  seo?: BaseHeadProps;
+}
+
+const { seo } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead {...seo} />
+  </head>
+  <body>
+    <slot name="announcement-bar" />
+    <slot name="header" />
+    <main id="content">
+      <slot />
+    </main>
+    <slot name="footer" />
+    <style is:global>
+      html {
+        font-family: system-ui, sans-serif;
+      }
+      body {
+        background: var(--background);
+      }
+    </style>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+  </body>
+</html>
