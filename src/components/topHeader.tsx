@@ -6,17 +6,19 @@ export const TopHeader = () => (
     className="w-screen h-[45px] bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 animate-gradientAnimation animation-duration-3000 animation-iteration-count-infinite"
   >
     <div className="flex justify-center ">
-      <span className="inline-flex items-center text-md font-bold pr-3">
+      <span className="inline-flex items-center font-semibold text-sm md:text-md pr-3">
         Schedule Your Free Class!
       </span>
-      <Button>Book Now</Button>
+      <Button className="my-1 align-middle" size="sm">
+        Book Now
+      </Button>
     </div>
   </div>
 );
 
 export const Nav = () => (
   <nav slot="header">
-    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
       <a href="/" className="flex items-center">
         <svg
           width="268"

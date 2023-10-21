@@ -1,6 +1,6 @@
 export const Footer = () => (
   <footer slot="footer">
-    <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 text-sm md:text-lg xl:text-xl">
+    <div className="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-8 text-sm md:text-lg xl:text-xl">
       <div className="flex gap-4">
         <div className="grid grid-cols-3 gap-8 md:gap-20 ">
           <div>
@@ -11,7 +11,7 @@ export const Footer = () => (
               <li>
                 <div>
                   <h3 className="text-neutral-300 pb-2">Location</h3>
-                  <a href="#">
+                  <a href="/">
                     <p> Strike Force & Fitness</p>
                   </a>
                 </div>
@@ -19,9 +19,7 @@ export const Footer = () => (
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 font-semibold text-white uppercase ">
-              Working Hours
-            </h2>
+            <h2 className="mb-6 font-semibold text-white uppercase ">Hours</h2>
             <ul className="text-gray-400  font-medium">
               <div>
                 <h3 className="text-neutral-300 pb-2 ">Mon-Fri</h3>
