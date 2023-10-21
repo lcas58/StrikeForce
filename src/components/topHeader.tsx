@@ -2183,7 +2183,7 @@ export const Nav = () => (
             </button>
             <div
               id="dropdownNavbar"
-              className="z-10 hidden font-normal bg-black divide-y divide-gray-100 rounded-lg shadow w-44"
+              className="z-10 hidden font-normal bg-black divide-y divide-gray-100 border rounded-lg shadow "
             >
               <ul
                 className="py-2 text-sm text-white "
