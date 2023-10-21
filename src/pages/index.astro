@@ -63,7 +63,7 @@ import {
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="text-white flex-1 flex flex-row sm:flex-col gap-6">
+      <div class="text-white flex-1 flex flex-row sm:flex-col gap-10">
         <div>
           <h1 class="font-bold text-xl sm:text-xl md:text-2xl">Location</h1>
           <p class="sm:text-lg">
@@ -77,14 +77,18 @@ import {
         <div>
           <h1 class="font-bold text-xl sm:text-lg md:text-2xl">Hours</h1>
 
-          <p class="sm:text-lg">
+          <div class="flex flex-col gap-1">
             {" "}
-            <span class="font-bold">Mon-Fri</span>
-            <br />
-             7am-8pm <br />
-            <span class="font-bold">Saturday</span><br />
-             12-2pm <br />
-          </p>
+            <div>
+              <span class="font-bold">Mon-Fri</span>
+              <br />
+               7am-8pm
+            </div>
+            <div>
+              <span class="font-bold">Saturday</span><br />
+               12-2pm
+            </div>
+          </div>
         </div>
       </div>
     </div>
