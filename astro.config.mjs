@@ -5,11 +5,11 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({ applyBaseStyles: false }), react()],
   output: "server",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
   }),
+  integrations: [tailwind({ applyBaseStyles: false }), react()],
 });
