@@ -2,7 +2,7 @@
 import "../../app/globals.css";
 import BaseHead from "@components/head/BaseHead.astro";
 import type { Props as BaseHeadProps } from "@components/head/BaseHead.astro";
-
+import { Analytics } from "@vercel/analytics/react";
 export interface Props {
   seo?: BaseHeadProps;
 }
@@ -33,5 +33,6 @@ const { seo } = Astro.props;
       is:inline
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
     ></script>
+    <Analytics />
   </body>
 </html>
