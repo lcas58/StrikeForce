@@ -61,7 +61,7 @@ export const Footer = () => (
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-400 sm:text-center ">
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href="" className="hover:underline">
             V3nti™
           </a>
           . All Rights Reserved.
